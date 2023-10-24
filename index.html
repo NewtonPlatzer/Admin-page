@@ -1,12 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Admin Page</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <h1>Admin</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <aside>
+      <div class="logo"><h1>Dashboard</h1></div>
+      <div class="enlaces-navbar">
+        <ul>
+          <li>
+            <a href="#"><i class="bi bi-house-door-fill"></i> Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-person-vcard"></i> Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-chat-right-dots-fill"></i> Messages</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-clock-fill"></i> History</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-clipboard2-fill"></i> Tasks</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-people-fill"></i> Communities</a>
+          </li>
+        </ul>
+      </div>
+      <div class="enlaces-settings">
+        <ul>
+          <li>
+            <a href="#"><i class="bi bi-gear-fill"></i> Settings</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-gear-fill"></i> Support</a>
+          </li>
+          <li>
+            <a href="#"><i class="bi bi-shield-fill-check"></i> Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="container">
+      <nav>
+        <div class="top-nav">
+          <div class="search">
+            <form action="">
+              <button type="submit"><i class="bi bi-search"></i></button>
+              <input type="text" name="search" />
+            </form>
+          </div>
+          <div class="iconsNav">
+            <a href="#"
+              ><p><i class="bi bi-bell-fill"></i></p
+            ></a>
+            <a href="#"
+              ><img src="avatar.png" alt="User image" width="40px"
+            /></a>
+            <p>Ike Rogers</p>
+          </div>
+        </div>
+        <div class="user-area">
+          <div class="user-profile">
+            <img src="avatar.png" alt="User Profile" width="80px" />
+            <div class="user-info">
+              <p>Hi there,</p>
+              <h3>Ike Rogers (@ikerogers)</h3>
+            </div>
+          </div>
+          <div class="user-actions">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="projects">
+          <h2>Projects</h2>
+          <div class="project">P1</div>
+          <div class="project">p2</div>
+          <div class="project">p3</div>
+          <div class="project">p4</div>
+          <div class="project">p5</div>
+          <div class="project">p6</div>
+        </div>
+        <div class="noticias">
+          <h2>Announcements</h2>
+        </div>
+        <div class="trending">
+          <h2>Trending</h2>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
