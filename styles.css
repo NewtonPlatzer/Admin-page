@@ -1,3 +1,119 @@
 :root{
   font-family: Arial, Helvetica, sans-serif;
+  --main-color: rgb(22, 130, 197)
+}
+* {
+  margin: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  overflow: hidden;
+
+}
+aside {
+  background-color: var(--main-color);
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+ul {
+  margin-top: 40px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+li > a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.4s;
+}
+li > a:hover {
+  opacity: 0.4;
+}
+nav {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-bottom: 2px solid lightgray;
+}
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.search {
+  width: 50%;
+}
+.search form input{
+  border: 0;
+  border-radius: 12px;
+  background-color: rgb(254, 226, 230);
+  height: 25px;
+  padding-left: 6px;
+  width: 70%;
+}
+.search form button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.3s;
+}
+.search form button:hover {
+  transform: scale(1.1);
+}
+.iconsNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 5%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  gap: 25px;
+  width: 50%;
+
+}
+.iconsNav > a {
+  color: black;
+}
+.iconsNav a:first-child {
+  transition: 0.3s;
+}
+.iconsNav a:first-child:hover {
+  transform: scale(1.1);
+}
+.user-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+.user-profile {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+}
+.user-actions button {
+  background-color: var(--main-color);
+  color: white;
+  border: 0;
+  border-radius: 40px;
+  padding: 8px 20px;
+  font-weight: bold;
+  letter-spacing: 1.1;
+  cursor: pointer;
+  margin: 0 6px;
+  transition: 0.3s;
+}
+.user-actions button:hover {
+  transform: scale(1.05);
 }
